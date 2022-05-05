@@ -18,3 +18,13 @@ Files included in this repository include:
     - The process of creating this program
     - Experiments done on this program and other chess AIs
     - Analysis of results
+
+## Features
+
+This chess program is an almost completely functional chess game. There are a few features that aren't included:
+
+- No En Passant
+- Kings can castle through or while in check
+- 
+
+## How To Run The Game
