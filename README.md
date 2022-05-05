@@ -37,11 +37,18 @@ Features that are included:
   - A couple iterations of an AI player can be played against:
     - An AI that plays moves at complete random
     - An AI that utilizes an evaluation function to decide moves
-    - An AI that utilizes a minimax algorithm with alpha-beta pruning # Not completely functional
+    - An AI that utilizes a minimax algorithm with alpha-beta pruning
+      - *Not completely functional*
   - The evaluation of the board is influenced by:
     - Pieces on the board after a move
     - Number of opposing player's moves after a move
     - Piece being moved and destination its being moved to
     - If the move results in checkmate
+- General Gameplay
+  - Most chess moves are available to play
+  - Promoting and Castling
+  - Pieces with no moves cannot be selected to move
+  - No time limit
+    - *Might be implemented in future*
 
 ## How To Run The Game
