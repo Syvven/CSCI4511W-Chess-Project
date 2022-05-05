@@ -25,6 +25,15 @@ This chess program is an almost completely functional chess game. There are a fe
 
 - No En Passant
 - Kings can castle through or while in check
-- 
+- Third version of the AI player is not completely finished, but somewhat functional
+
+Features that are included:
+
+- Graphics
+  - Player can click on a piece that has valid moves, and the moves are highlighted
+  - The current player's turn is noted on the right of the board
+  - The colors were chosen by a design major as to be easy on the eyes and look nice
+- Gameplay
+  - 
 
 ## How To Run The Game
