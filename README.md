@@ -24,7 +24,7 @@ Files included in this repository include:
 This chess program is an almost completely functional chess game. There are a few features that aren't included:
 
 - No En Passant
-- Kings can castle through or while in check
+- Kings can castle through, or while in, check
 - Third version of the AI player is not completely finished, but somewhat functional
 
 Features that are included:
