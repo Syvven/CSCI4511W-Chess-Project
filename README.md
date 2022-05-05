@@ -8,5 +8,6 @@ This repository contains the files to run a game of chess created by myself (Noa
 
 Files included in this repository include:
 
-- ```chess.py```
-  - 
+- `chess.py`
+  - contains all the code necessary to run the game
+- 
