@@ -74,8 +74,26 @@ Step 2: Install the following python libraries:
 
 `turtle, time, math, random, copy`
 
-Step 3: cd into the proper directory containing the `chess-final-for-now.py` file
+Step 3: cd into the proper directory containing the `chess-final-for-now.py` file that is accessible by python
 
 Step 4: In terminal, type:
 
 `> python3 chess-final-for-now.py`
+
+## How to Play The Game
+
+- When the file has been run, select the piece you wish to move and the available moves will be highlighted. 
+- Select the square you wish to move the piece to
+- If you wish to select a different piece, right click
+  - Depending on your mouse, it may not work because of right click being numbered differently
+- At most points, you can hit the 'z' key in order to undo the previous move. 
+  - The AI will not move again if you undo its move, so you will have to undo two moves at a time
+- If you hit the 'r' key, you will restart the game from fresh
+- If you hit the 'q' key, the program will terminate and the turtle screen will close
+- Play the game until a player is in checkmate
+- Once this occurs, a notification will pop up, from which you can restart using 'r' or quit using 'q'
+
+## Known Issues
+
+
+
