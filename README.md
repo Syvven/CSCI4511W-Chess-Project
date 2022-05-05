@@ -38,5 +38,10 @@ Features that are included:
     - An AI that plays moves at complete random
     - An AI that utilizes an evaluation function to decide moves
     - An AI that utilizes a minimax algorithm with alpha-beta pruning # Not completely functional
+  - The evaluation of the board is influenced by:
+    - Pieces on the board after a move
+    - Number of opposing player's moves after a move
+    - Piece being moved and destination its being moved to
+    - If the move results in checkmate
 
 ## How To Run The Game
