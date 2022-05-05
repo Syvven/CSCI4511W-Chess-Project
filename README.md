@@ -50,5 +50,26 @@ Features that are included:
   - Pieces with no moves cannot be selected to move
   - No time limit
     - *Might be implemented in future*
+  - Stalemate is not a thing
+    - I personally do not like the rule in most circumstances so I forewent it
+    - Will be implemented for certain other circumstances
+  - No move limit
+
+## Planned Features
+
+Planned features include:
+
+- Optional time limits
+- A fully functional third AI iteration
+- Not being able to castle through, or out of, check
+- Stalemates in certain circumstances
+- Optional move limit
+- En Passant
 
 ## How To Run The Game
+
+Step 1: Install Python 3
+
+Step 2: Install the following python libraries:
+
+`turtle, time, math, random, 
