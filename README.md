@@ -72,4 +72,10 @@ Step 1: Install Python 3
 
 Step 2: Install the following python libraries:
 
-`turtle, time, math, random, 
+`turtle, time, math, random, copy`
+
+Step 3: cd into the proper directory containing the `chess-final-for-now.py` file
+
+Step 4: In terminal, type:
+
+`> python3 chess-final-for-now.py`
