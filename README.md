@@ -33,7 +33,10 @@ Features that are included:
   - Player can click on a piece that has valid moves, and the moves are highlighted
   - The current player's turn is noted on the right of the board
   - The colors were chosen by a design major as to be easy on the eyes and look nice
-- Gameplay
-  - 
+- AI Player
+  - A couple iterations of an AI player can be played against:
+    - An AI that plays moves at complete random
+    - An AI that utilizes an evaluation function to decide moves
+    - An AI that utilizes a minimax algorithm with alpha-beta pruning # Not completely functional
 
 ## How To Run The Game
