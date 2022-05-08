@@ -8,10 +8,18 @@ This repository contains the files to run a game of chess created by myself (Noa
 
 Files included in this repository include:
 
-- `chess-final-for-now.py`
-  - contains all the code necessary to run the game
-- `lauren-pieces`
-  - contains sprites for the pieces, recolored by Lauren Oliver
+- `old-files`
+- `updated-files`
+  - `lauren-pieces`
+    - contains sprites for the pieces, recolored by Lauren Oliver
+  - `chess.py`
+    - contains main code to setup the chess game
+  - `piece.py`
+    - contains Piece class definition for information on individual pieces
+  - `board.py`
+    - contains the Board class definition as well as most of the functional code
+  - `move.py`
+    - contains Move class definition to contain information on moves
 - `Final-Report.pdf`
   - contains an 11 page report that includes:
     - A history of chess AI and algorithms
