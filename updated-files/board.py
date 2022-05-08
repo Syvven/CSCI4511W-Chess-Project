@@ -777,7 +777,7 @@ class Board:
             # will allow you to pick a new piece
             sc.onclick(self.reset_helper, RIGHT_CLICK)
 
-    def evaluate(self, board, curr_move):
+    def evaluate(self, board, curr_move, first=None):
         self.leaves_reached += 1
         val = 0
         if curr_move.src_p&7 == Piece.King:
@@ -787,7 +787,10 @@ class Board:
         for piece in board.board:
             val += Piece.values[piece]
         val += len(board.all_moves)*5*Piece.color_relation[board.turn_color][0]
-        return val
+        if first == None:
+            return val
+        else:
+            return [val, first]
 
     def get_move_from_eval(self, moves):
         todo = []
@@ -839,18 +842,22 @@ class Board:
         all_moves = copy.deepcopy(moves)
         board = copy.deepcopy(self)
         best_move = []
-        best_val = -math.inf
+        alpha = -math.inf
+        beta = math.inf
         for move in moves:
+            first_move = move
             board.move_piece(move,test=True)
-            val = self.evaluate_search(board, move, depth-1)
+            val = -self.evaluate_search(board, move, depth-1, -beta, -alpha)
             board.undo_move_piece(test=False)
-            if val > best_val:
-                best_val = val
+            if val >= beta:
+                continue
+            if val > alpha:
+                alpha = val
                 best_move = [move]
-            elif val == best_val:
+            elif val == alpha:
                 best_move.append(move)
         print(self.leaves_reached)
-        print(best_val)
+        print(alpha)
         if len(best_move) == 1:
             return best_move[0]
         else:
@@ -875,7 +882,7 @@ class Board:
             self.move_piece(move)
         elif self.ai_ver == 3:
             print("ver 3")
-            move = self.get_move_from_search(self.all_moves, 3)
+            move = self.get_move_from_search(self.all_moves, 2)
             self.move_piece(move)
         
         self.all_moves = []
