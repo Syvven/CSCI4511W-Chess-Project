@@ -114,5 +114,6 @@ Step 4: In terminal, type:
 - Minimax search is slow
 - No stalemate for certain circumstances
 - Not implemented many aspects of a good board evaluation, thus the AI is not great
+- Some circumstances can mess up the flow of the game
 
 
