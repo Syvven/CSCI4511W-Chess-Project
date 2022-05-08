@@ -175,7 +175,7 @@ class Board:
             white = not white
         sc.update()
 
-    def promote_piece(self, x, y):
+    def promote_piece(self, x=0, y=0):
         if not self.ai_turn:
             print('inside promote_helper')
             valid = False
@@ -193,7 +193,8 @@ class Board:
                         self.ai_play()
 
         else:
-            print("hi")
+            self.board[self.last_moves[-1].dst] = Piece.Queen|Piece.Black
+            self.change_turn(promoted=True)
 
     # puts overlay on board for possible moves
     def display_possible_moves(self):
@@ -698,6 +699,8 @@ class Board:
         else:
             if not test:
                 self.switch_turn_turtle()
+                if self.ai_turn:
+                    self.promote_piece()
 
     # does work for selecting the destination square after selecting a piece
     def destination_square(self, x, y):
@@ -799,7 +802,7 @@ class Board:
             self.move_piece(move, test=True)
             moves = self.generate_all_moves()
             self.check_for_check(moves)
-            val = self.evaluate(move, moves)
+            val = self.evaluate(self, move)
             self.undo_move_piece(test=True)
             if val > max_val:
                 max_val = val
@@ -874,6 +877,7 @@ class Board:
         
         if self.ai_ver == 1:
             print("ver 1")
+            random.seed("pissing")
             move = self.get_random_move(self.all_moves)
             self.move_piece(move)
         elif self.ai_ver == 2:
