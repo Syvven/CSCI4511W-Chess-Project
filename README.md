@@ -9,6 +9,11 @@ This repository contains the files to run a game of chess created by myself (Noa
 Files included in this repository include:
 
 - `old-files`
+  - `lauren-pieces`
+    - contains sprites for the pieces, recolored by Lauren Oliver
+  - `chess-final-for-now.py`
+    - contains all the code needed to run the game
+    - this iteration lacks a couple features and has a non-functional AI version
 - `updated-files`
   - `lauren-pieces`
     - contains sprites for the pieces, recolored by Lauren Oliver
