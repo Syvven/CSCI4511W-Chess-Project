@@ -96,6 +96,7 @@ Step 4: In terminal, type:
   - 2: ai moves utilize heuristic function with no search
   - 3: ai moves utilize minimax with alpha-beta pruning
     - search depth can be changed my modifying global variable at top of `board.py`
+    - default depth is 3
 
 ## How to Play The Game
 
