@@ -99,6 +99,8 @@ Step 4: In terminal, type:
 
 ## How to Play The Game
 
+DISCLAIMER: Turtle is slow, making inputs too fast in certain circumstances can lead to things breaking
+
 - When the file has been run, select the piece you wish to move and the available moves will be highlighted. 
 - Select the square you wish to move the piece to
 - If you wish to select a different piece, right click
