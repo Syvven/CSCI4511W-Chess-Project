@@ -36,7 +36,7 @@ Files included in this repository include:
 
 This chess program is an almost completely functional chess game. There are a few features that aren't included:
 
-- Third AI version is somewhat slow
+- Third AI version is slow
 - Stalemate not entirely implemented
 
 Features that are included:
