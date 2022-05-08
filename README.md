@@ -111,5 +111,7 @@ Step 4: In terminal, type:
 
 ## Known Issues
 
+- Minimax search is slow
+- No stalemate for certain circumstances
 
 
