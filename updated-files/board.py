@@ -3,6 +3,8 @@ from piece import Piece
 from move import Move
 import chess
 
+DEPTH = 3
+
 tr = turtle.Turtle()
 sc = tr.getscreen()
 turn_tr = turtle.Turtle()
@@ -886,7 +888,7 @@ class Board:
             self.move_piece(move)
         elif self.ai_ver == 3:
             print("ver 3")
-            move = self.get_move_from_search(self.all_moves, 2)
+            move = self.get_move_from_search(self.all_moves, DEPTH)
             self.move_piece(move)
         
         self.all_moves = []
