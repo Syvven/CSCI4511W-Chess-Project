@@ -1,6 +1,6 @@
 # CSCI4511W Final Project
 
-## Chess -- Currently Being Updated -- Expected to Finish Sometime This Weekend (5/6/22)
+## Chess -- Mostly Finished
 
 This repository contains the files to run a game of chess created by myself (Noah Hendrickson) for the CSCI 4511W Intro to Artificial Intelligence final project. The game is written in python and the graphics utilize turtle's python library. 
 
