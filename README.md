@@ -95,6 +95,7 @@ Step 4: In terminal, type:
   - 1: completely random ai moves
   - 2: ai moves utilize heuristic function with no search
   - 3: ai moves utilize minimax with alpha-beta pruning
+    - search depth can be changed my modifying global variable at top of `board.py`
 
 ## How to Play The Game
 
