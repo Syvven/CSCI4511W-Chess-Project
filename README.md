@@ -8,13 +8,13 @@ This repository contains the files to run a game of chess created by myself (Noa
 
 Files included in this repository include:
 
-- `old-files`
+- `old-files`: Old program files that have since been updated
   - `lauren-pieces`
     - contains sprites for the pieces, recolored by Lauren Oliver
   - `chess-final-for-now.py`
     - contains all the code needed to run the game
     - this iteration lacks a couple features and has a non-functional AI version
-- `updated-files`
+- `updated-files`: The new directory for the main program
   - `lauren-pieces`
     - contains sprites for the pieces, recolored by Lauren Oliver
   - `chess.py`
@@ -36,9 +36,8 @@ Files included in this repository include:
 
 This chess program is an almost completely functional chess game. There are a few features that aren't included:
 
-- No En Passant
-- Kings can castle through, or while in, check
-- Third version of the AI player is not completely finished, but somewhat functional
+- Third AI version is somewhat slow
+- Stalemate not entirely implemented
 
 Features that are included:
 
@@ -51,15 +50,13 @@ Features that are included:
     - An AI that plays moves at complete random
     - An AI that utilizes an evaluation function to decide moves
     - An AI that utilizes a minimax algorithm with alpha-beta pruning
-      - *Not completely functional*
   - The evaluation of the board is influenced by:
     - Pieces on the board after a move
     - Number of opposing player's moves after a move
     - Piece being moved and destination its being moved to
     - If the move results in checkmate
 - General Gameplay
-  - Most chess moves are available to play
-  - Promoting and Castling
+  - Promoting, Castling, and En Passant
   - Pieces with no moves cannot be selected to move
   - No time limit
     - *Might be implemented in future*
@@ -73,11 +70,8 @@ Features that are included:
 Planned features include:
 
 - Optional time limits
-- A fully functional third AI iteration
-- Not being able to castle through, or out of, check
 - Stalemates in certain circumstances
 - Optional move limit
-- En Passant
 
 ## How To Run The Game
 
@@ -87,11 +81,20 @@ Step 2: Install the following python libraries:
 
 `turtle, time, math, random, copy`
 
-Step 3: cd into the proper directory containing the `chess.py` file that is accessible by python
+Step 3: cd into the `updated-files` directory containing the `chess.py` file that is accessible by python
 
 Step 4: In terminal, type:
 
-`> python3 chess.py`
+`> python3 chess.py <mode> <ai_version>`
+
+- mode: 
+  - two-player: will initiate a game that can be played by two human players
+  - ai: will initiate a game where human plays as white, and an AI plays as black
+- ai_version: 
+  - 0: input for two-player mode
+  - 1: completely random ai moves
+  - 2: ai moves utilize heuristic function with no search
+  - 3: ai moves utilize minimax with alpha-beta pruning
 
 ## How to Play The Game
 
