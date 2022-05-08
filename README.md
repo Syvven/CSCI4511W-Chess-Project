@@ -74,11 +74,11 @@ Step 2: Install the following python libraries:
 
 `turtle, time, math, random, copy`
 
-Step 3: cd into the proper directory containing the `chess-final-for-now.py` file that is accessible by python
+Step 3: cd into the proper directory containing the `chess.py` file that is accessible by python
 
 Step 4: In terminal, type:
 
-`> python3 chess-final-for-now.py`
+`> python3 chess.py`
 
 ## How to Play The Game
 
